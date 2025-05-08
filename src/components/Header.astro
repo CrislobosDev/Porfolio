@@ -1,29 +1,36 @@
----
-
----
-
-<header>
-  <a href="/">
-    <img src="/public/Logo.png" alt="Logo" class="logo" />
-  </a>
-  <nav>
-    <ul class="navbar">
-      <li><a href="/">Inicio</a></li>
-      <li><a href="#sobreMi">Sobre mi</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="/Blog">Blog</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
+<div class="header">
+  <header>
+    <a href="/">
+      <img src="/public/Logo.png" alt="Logo" class="logo" />
+    </a>
+    <nav>
+      <ul class="navbar">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="#sobreMi">Sobre mi</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="/Blog">Blog</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
 
 <style>
-  header {
+  .header {
     display: flex;
-    justify-content: space-between;
+    align-content: center;
+    justify-content: center;
+  }
+  header {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    background-color: #12243b;
-    margin: 0 100px;
+    background-color: #00000055;
+    max-width: fit-content;
+    border-radius: 12px;
+    margin-top: 10px;
+    padding: 4px 14px;
   }
   .logo {
     width: 200px;
@@ -31,7 +38,6 @@
     margin-left: 20px;
     cursor: pointer;
     transition: ease-in-out 0.3s;
-
   }
   .logo:hover {
     transform: scale(1.02);
