@@ -1,37 +1,28 @@
-<div class="header">
-  <header>
-    <a href="/">
-      <img src="/Villa_dev_MrRobot_Logo.png" alt="Logo" class="logo" />
-    </a>
-    <nav>
-      <ul class="navbar">
-        <li><a href="/">Inicio</a></li>
-        <li><a href="#sobreMi">Sobre mi</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="/Blog">Blog</a></li>
-      </ul>
-    </nav>
-  </header>
-</div>
+<header>
+  <a href="/">
+    <img src="/Villa_dev_MrRobot_Logo.png" alt="Logo" class="logo" />
+  </a>
+  <nav>
+    <ul class="navbar">
+      <li><a href="/">Inicio</a></li>
+      <li><a href="#sobreMi">Sobre mi</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="/Blog">Blog</a></li>
+    </ul>
+  </nav>
+</header>
 
 <style>
-  .header {
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-    font-size: 1.2rem;
-  }
   header {
-    position: absolute;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    min-width: 100rem;
-    max-width: fit-content;
-    border-radius: 6px;
+    width: 100%;
+    min-width: 100rem;;
     margin-top: 20px;
-    padding: 4px 20px;
+    z-index: 1000;
   }
   .logo {
     width: 150px;
@@ -58,5 +49,3 @@
     transition: ease-in-out 0.1s;
   }
 </style>
-
-  
