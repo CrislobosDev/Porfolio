@@ -1,26 +1,63 @@
-<footer
-  style="background-color: #131313; color: #fff; padding: 1rem 1rem; text-align: center;"
->
-  <div style="max-width: 960px; margin: 0 auto;">
-    <p style="margin: 0 0 0.5rem;">© 2025 Cristian Villalobos Velasquez</p>
-    <p style="margin: 0 0 1rem;">Desarrollador Web • Santo Domingo, Chile</p>
-    <div
-      style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;"
-    >
-      <a
-        href="mailto:cristianvillalobosvv@gmail.com"
-        style="color: #ccc; text-decoration: none;">Email</a
-      >
-      <a
-        href="https://github.com/CrisLobos"
-        target="_blank"
-        style="color: #ccc; text-decoration: none;">GitHub</a
-      >
-      <a
-        href="https://www.linkedin.com/in/cris-villalobos/"
-        target="_blank"
-        style="color: #ccc; text-decoration: none;">LinkedIn</a
-      >
+<footer class="footer">
+  <div class="footer-container">
+    <p>© 2025 Cristian Villalobos Velasquez</p>
+    <p>Desarrollador Web • Santo Domingo, Chile</p>
+    <div class="footer-links">
+      <a href="mailto:cristianvillalobosvv@gmail.com">Email</a>
+      <a href="https://github.com/CrisLobos" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/cris-villalobos/" target="_blank">LinkedIn</a>
     </div>
   </div>
 </footer>
+
+<style>
+  .footer {
+  background-color: #00000052;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.footer-container {
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 0 0 0.7rem;
+  font-size: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.footer-links a:hover {
+  color: #ffb800;
+  transform: scale(1.1);
+}
+
+/* Diseño responsivo */
+@media (max-width: 600px) {
+  .footer p {
+    font-size: 0.9rem;
+  }
+
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+}
+
+</style>

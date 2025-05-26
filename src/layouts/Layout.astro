@@ -11,44 +11,49 @@ import Footer from "../components/Footer.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>Cristian Porfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <Header />
     <slot />
     <Footer />
   </body>
+
+  <style>
+    html,
+    body {
+      font-family: "Roboto", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+        
+    }
+    body {
+      background-image: url("/fondo.webp");
+      backdrop-filter: blur(80px);
+      background-size: cover; /* Ajustado para que ocupe toda la pantalla */
+      background-repeat: no-repeat;
+      background-attachment: fixed; /* Esto hace que el fondo se mantenga en su lugar */
+      background-position: center; /* Centra la imagen de fondo */
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6); /* Ajusta el nivel de oscuridad */
+      z-index: -1;
+    }
+  </style>
 </html>
-
-<style>
-  html,
-  body {
-  background: linear-gradient(-45deg, #b33565, #1d80a3);
-  background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-  .Header {
-    position: relative;
-  }
-</style>
