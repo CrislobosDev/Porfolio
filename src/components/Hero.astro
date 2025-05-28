@@ -32,6 +32,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: left;
+
+    @media (max-width: 768px) {
+      align-items: center;
+      text-align: center;
+    }
   }
   h1 {
     font-size: 4rem;
@@ -75,5 +80,11 @@
     background-color: #ffb800;
     color: #000;
     transform: scale(1.05);
+  }
+
+  .hero-image {
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 </style>

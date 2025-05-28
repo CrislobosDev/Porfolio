@@ -25,69 +25,80 @@
 
 <style>
   .contenedor-sobreMi {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; /* Mejora la responsividad */
-  height: 100vh;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Mejora la responsividad */
+    height: 100vh;
+  }
 
-.text-sobreMi {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.sobreMi {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1.5rem;
-}
-
-.img-sobreMi {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  margin: 4rem 0; /* Reducimos margen */
-}
-
-h1 {
-  font-size: 3rem;
-  color: #eef0e4;
-  text-transform: uppercase;
-}
-
-p {
-  font-size: 1.6rem;
-  color: #eef0e4;
-  line-height: 1.8; /* Mejora legibilidad */
-}
-
-img {
-  margin: 0 20px;
-  width: 4rem;
-  filter: contrast(0.9) brightness(0.9);
-  transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
-}
-
-img:hover {
-  transform: scale(1.15);
-  filter: contrast(1) brightness(1);
-}
-
-/* Diseño responsivo */
-@media (max-width: 768px) {
-  .contenedor-sobreMi {
+  .text-sobreMi {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
-  .img-sobreMi img {
-    width: 3rem;
-  }
-}
+  .sobreMi {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
 
+    @media (max-width: 768px) {
+      align-items: center;
+      text-align: center;
+      margin-top: 20rem;
+    }
+  }
+
+  .img-sobreMi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 4rem 0; /* Reducimos margen */
+  }
+
+  h1 {
+    font-size: 3rem;
+    color: #eef0e4;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 1.6rem;
+    color: #eef0e4;
+    line-height: 1.8; /* Mejora legibilidad */
+
+    @media (max-width: 768px) {
+      font-size: 1.2rem; /* Ajustamos el tamaño del texto en pantallas pequeñas */
+    }
+  }
+
+  img {
+    margin: 0 20px;
+    width: 4rem;
+    filter: contrast(0.9) brightness(0.9);
+    transition:
+      transform 0.4s ease-in-out,
+      filter 0.4s ease-in-out;
+  }
+
+  img:hover {
+    transform: scale(1.15);
+    filter: contrast(1) brightness(1);
+  }
+
+  /* Diseño responsivo */
+  @media (max-width: 768px) {
+    .contenedor-sobreMi {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .img-sobreMi img {
+      width: 3rem;
+    }
+  }
 </style>
